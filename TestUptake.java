@@ -45,10 +45,9 @@ public class TestUptake {
 	{
 		Thread.sleep(500);
 		System.out.println("Navigating Approach Page");
-		WebElement searchString;
-		System.out.println("searchString");
+	
 		Thread.sleep(500);
-		System.out.println("switchTo");
+		
 		if(driver.getPageSource().contains("How we build our products"))
 		{
 			System.out.println("Confirmation - On Approach Page");
