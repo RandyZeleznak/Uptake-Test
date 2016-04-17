@@ -37,14 +37,15 @@ public class TestUptake {
 		Thread.sleep(1000);
 		link.click();
 		System.out.println("HomePage-Approach-Click");
+		ApproachPage(driver);
 		return driver;
 	}
 
 	// Class ApproachPage - is the class used to navigate the Approach web page "http://www.uptake.com/approach".
 	private static WebDriver ApproachPage(WebDriver driver) throws InterruptedException
 	{
-		Thread.sleep(500);
-		System.out.println("Navigating Approach Page");
+		Thread.sleep(1000);
+		
 	
 		Thread.sleep(500);
 		
@@ -54,9 +55,11 @@ public class TestUptake {
 		}
 		else
 		{
-			System.out.println("TEXT NOT TOUND");
+			System.out.println("ERROR: Unable to locate text on Page Approach");
+			return driver;
 		}
 		Thread.sleep(1000);
+		System.out.println("Navigating Approach Page");
 		
 		return driver;
 	}
